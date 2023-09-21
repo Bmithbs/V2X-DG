@@ -8,6 +8,7 @@ opencood/logs
 other_utils
 DomainAlignment
 *.txt
+.vscode
 # C extensions
 *.so
 
