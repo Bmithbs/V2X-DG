@@ -11,6 +11,9 @@ DomainAlignment
 .vscode
 # C extensions
 *.so
+train.sh
+train*
+val*
 
 # Distribution / packaging
 .Python

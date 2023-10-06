@@ -1,8 +1,8 @@
 export PYTHONPATH=$PYTHONPATH:/home/xhchen/hsk/CoBEVT/opv2v/opencood
-export CUDA_VISIBLE_DEVICES=0,1
+export CUDA_VISIBLE_DEVICES=0
 
 # python -m torch.distributed.launch --nproc_per_node=2  --use_env opencood/tools/train_camera.py --hypes_yaml opencood/hypes_yaml/opcamera/corpbevt.yaml --if_meta_training --mmd
-python  opencood/tools/train_camera.py --hypes_yaml opencood/hypes_yaml/opcamera/corpbevt.yaml --if_meta_training --mmd
+nohup python  opencood/tools/train_camera.py --hypes_yaml opencood/hypes_yaml/opcamera/corpbevt.yaml --model_dir logs_pretrained/cobevt_2 --if_meta_training --mmd > output_3.txt &
 
 
 # nohup python opencood/tools/train_camera.py --hypes_yaml opencood/hypes_yaml/opcamera/corpbevt.yaml --model_dir opencood/logs/corpbevt_2023_08_22_23_03_39 > output_cobevt.txt &

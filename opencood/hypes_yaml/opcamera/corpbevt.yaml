@@ -1,12 +1,12 @@
 name: cobevt_dynamic # only used for demonstration data api
-root_dir: '/home/xhchen/workspace/haonan/train_merged'
-validate_dir: '/home/xhchen/workspace/haonan/check_set'
+root_dir: '/home/xhchen/hsk/CoBEVT/opv2v/train_1'
+validate_dir: '/home/xhchen/hsk/CoBEVT/opv2v/val_1'
 
 
 train_params:
   batch_size: &batch_size 1
   epoches: &epoches 151
-  eval_freq: 5
+  eval_freq: 1
   save_freq: 5
   max_cav: &max_cav 5
   visible: true
